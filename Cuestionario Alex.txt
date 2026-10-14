@@ -1,0 +1,77 @@
+Cuestionario Alex 
+
+1. Flujo, volumen y filtrado de entrada
+
+
+Volumen diario: ¿Cuántos correos recibe Alex al día aproximadamente y cuántos de ellos son realmente accionables (que requieren su atención directa)?
+
+Cuentas y alias: ¿Alex gestiona una sola cuenta personal (alex@...) o también recibe/atiende correos de buzones generales o alias de SSERVITIUM (ej. info@, operaciones@, facturacion@)?
+
+Manejo de copias (CC): Cuando Alex está únicamente en copia (CC o CCO) y no como destinatario principal, ¿debería tratarse por defecto como Solo información con prioridad baja, salvo que se mencione explícitamente su nombre en el cuerpo?
+
+Descarte de ruido: ¿Cuáles son los remitentes, boletines, notificaciones de plataformas de software o tipos de correos que deberían archivarse o clasificarse directamente como informativos sin pasar por análisis profundo?
+
+
+2. Criterios de prioridad y reglas de negocio
+
+
+Cuentas y contactos VIP: ¿Existen clientes estratégicos, directivos o proveedores clave cuyos correos siempre deban ingresar con Prioridad Alta, con independencia del asunto?
+
+Definición de "Incidencia": En la operativa habitual de SSERVITIUM, ¿qué tipo de situaciones o palabras representan una verdadera incidencia crítica que requiera atención inmediata?
+
+Conflicto de prioridades: Si un correo proviene de un cliente habitual pero el contenido es puramente informativo, ¿prevalece la jerarquía del cliente o el tipo de mensaje?
+
+
+3. Estilo y redacción de la IA 
+
+
+Tono de comunicación: ¿Cómo redacta Alex habitualmente?
+
+Tono: ¿Formal y distante ("Estimado...") o cercano y directo ("Hola [Nombre]...")?
+
+Trato: ¿De tú o de usted?
+
+Firmas y cierres: ¿Existe una firma corporativa oficial o despedida estándar que la IA deba respetar al armar el borrador?
+
+Plantillas recurrentes: ¿Hay trámites o respuestas que se repitan con frecuencia (ej. acuse de recibo de facturas, solicitud de información para elaborar presupuestos, confirmación de visitas) donde convenga usar una estructura fija?
+
+
+4. Control de tiempos y SLAs
+
+
+Tiempos de espera a terceros: Cuando Alex responde y queda en Esperando respuesta:
+
+¿A los cuántos días sin respuesta de un cliente debería pasar a Seguimiento necesario?
+
+¿Aplica el mismo plazo para proveedores que para clientes?
+
+Días hábiles vs. naturales: ¿El conteo de días (+2, +3, +5 días) debe considerar únicamente días laborables (lunes a viernes) o días calendario?
+
+Antigüedad de correos recibidos: Si Alex recibe un correo que requiere respuesta, ¿cuántos días pueden pasar antes de que el sistema le aumente visualmente la urgencia por demora interna?
+
+
+5. Gestión de documentos adjuntos
+
+
+Destino de los archivos: Además de extraer los datos clave (ej. proveedor, base, IVA, vencimiento de facturas), ¿Alex necesita que los archivos se guarden o clasifiquen automáticamente en carpetas específicas de Google Drive, o le basta con verlos en la plataforma?
+
+Tipos de adjuntos prioritarios: Entre facturas, presupuestos, partes de trabajo y contratos, ¿cuáles son los 2 o 3 documentos que más tiempo le quitan al revisarlos manualmente?
+
+
+6. Agenda y Google Calendar
+
+
+Herramienta de videollamada: ¿SSERVITIUM utiliza Google Meet por defecto o enlaces de otras plataformas (Teams, Zoom)?
+
+Detección de solapamientos: Si llega una invitación a una hora donde Alex ya tiene otro evento en su Google Calendar, ¿cómo prefiere que la plataforma le alerte?
+
+Propuestas de reunión: Cuando la IA proponga un borrador para coordinar una reunión, ¿debería consultar su calendario para ofrecer directamente huecos libres disponibles?
+
+
+7. Experiencia móvil, notificaciones y rutina
+
+
+Horario del Resumen Diario: ¿A qué hora exacta de la mañana debería generarse el resumen matutino para que esté listo cuando empiece a trabajar?
+
+Canales de notificación: En el móvil, ¿en qué casos extremos justificaría recibir una notificación push inmediata (ej. solo Prioridad Alta de clientes VIP o citas en los próximos 30 minutos)? ¿Desea una franja horaria de silencio (sin alertas fuera de jornada)?
+

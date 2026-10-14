@@ -1,0 +1,464 @@
+Luis y alex 
+
+Proyecto Alex : 
+
+Proyecto madre : E:\Proyectos servitium\AT-Asistente Alex
+
+Cuaderno Gemini : https://notebook.google.com/notebook/bcde5778-045c-4eb5-8501-29fc65f7a3aa
+
+Alex 
+
+Alex quiere automatizar y mejorar la gestión de su correo de Google, porque la idea es facilitarle el control diario de todos los emails, gestiones, respuestas, documentación, reuniones y asuntos pendientes que recibe.
+
+He estado definiendo qué necesitaríamos y, antes de empezar a desarrollar nada, quiero que revises el planteamiento y nos digas técnicamente cuál consideras que sería la mejor forma de hacerlo.
+
+¿QUÉ PROBLEMA QUEREMOS RESOLVER?
+
+Actualmente toda la información llega al correo de Alex y es él quien tiene que:
+
+Revisar los emails.
+Identificar qué es importante.
+Distinguir clientes, proveedores, comunicaciones internas, facturas, incidencias, etc.
+Detectar qué necesita respuesta.
+Recordar qué tiene pendiente.
+Controlar fechas límite.
+Saber a quién ha contestado y de quién está esperando respuesta.
+Revisar documentación adjunta.
+Gestionar invitaciones y reuniones.
+Controlar su calendario.
+Queremos utilizar IA y automatización para que gran parte de este trabajo previo se realice automáticamente.
+
+Pero no queremos simplemente añadir etiquetas en Gmail.
+
+La idea que estamos planteando es crear una plataforma inteligente que se convierta en el único punto de entrada de Alex para gestionar su correo, agenda y prioridades.
+
+Gmail y Google Calendar seguirían funcionando por detrás, pero Alex trabajaría principalmente desde esta plataforma.
+
+¿CÓMO DEBERÍA FUNCIONAR?
+
+Cuando Alex entre por la mañana debería encontrarse directamente algo parecido a:
+
+Buenos días, Alex
+
+Tienes 12 asuntos que requieren tu atención
+
+3 urgentes.
+1 vencido.
+6 requieren respuesta.
+4 requieren alguna acción.
+5 esperando respuesta.
+2 seguimientos pendientes.
+3 reuniones hoy.
+1 invitación pendiente de aceptar.
+Y debajo:
+
+PRIORIDADES DE HOY
+
+Con los asuntos que realmente debería atender primero.
+
+La idea es que no tenga que revisar 50 emails para descubrir cuáles son los 8 importantes.
+
+1. ANÁLISIS AUTOMÁTICO DEL CORREO
+
+Cada vez que llegue un email a su cuenta de Google, el sistema debería analizar automáticamente:
+
+Remitente.
+Empresa.
+Asunto.
+Contenido.
+Hilo anterior cuando sea necesario.
+Fechas mencionadas.
+Adjuntos.
+Contexto de la conversación.
+Y generar un resumen breve del asunto.
+
+2. CLASIFICACIÓN CON IA
+
+La IA debería clasificar los correos automáticamente.
+
+Por ejemplo:
+
+CLIENTE
+
+PROVEEDOR
+
+INTERNO
+
+FACTURA
+
+INCIDENCIA
+
+COMERCIAL
+
+PEDIDO
+
+PRESUPUESTO
+
+REUNIÓN
+
+INFORMATIVO
+
+OTROS
+
+Un mismo correo puede tener diferentes clasificaciones.
+
+Por ejemplo:
+
+CLIENTE + INCIDENCIA + URGENTE + REQUIERE RESPUESTA
+
+3. DETECTAR QUÉ NECESITA ALEX
+
+Además de clasificarlo, queremos que la IA determine qué debe hacerse con ese asunto.
+
+Por ejemplo:
+
+REQUIERE RESPUESTA
+
+REQUIERE ACCIÓN
+
+SOLO INFORMACIÓN
+
+ESPERANDO RESPUESTA
+
+SEGUIMIENTO NECESARIO
+
+REUNIÓN / CITA
+
+RESUELTO
+
+4. PRIORIDAD
+
+El sistema debería determinar automáticamente:
+
+ALTA / MEDIA / BAJA
+
+Pero no queremos que simplemente busque la palabra "urgente".
+
+Debería valorar el contenido, remitente, cliente, fechas, tiempo pendiente y contexto.
+
+Más adelante podremos definir también clientes/contactos que siempre tengan una prioridad especial.
+
+5. FECHAS LÍMITE
+
+Queremos que la IA pueda interpretar frases como:
+
+"Necesitamos respuesta antes del viernes."
+
+"Esto tiene que estar preparado mañana."
+
+"Necesitamos el presupuesto el día 5."
+
+Y convertirlas en una fecha límite.
+
+Después, la plataforma debería controlar automáticamente:
+
+PRÓXIMO VENCIMIENTO
+
+VENCE HOY
+
+VENCIDO
+
+y aumentar la prioridad cuando corresponda.
+
+6. RESPUESTAS PREPARADAS POR IA
+
+Cuando un email requiera respuesta, queremos que la IA prepare una propuesta de contestación utilizando el contexto del correo y del hilo anterior.
+
+Pero hay un requisito importante:
+
+La IA nunca enviará automáticamente la respuesta.
+
+Alex deberá poder:
+
+REVISAR → MODIFICAR → ENVIAR
+
+Todo desde la plataforma.
+
+Cuando pulse enviar, el email deberá salir desde su cuenta de Google y permanecer correctamente dentro del hilo de Gmail.
+
+7. CONTROL DE ASUNTOS SIN RESPONDER
+
+Queremos evitar que determinados emails queden olvidados.
+
+El sistema debería detectar asuntos pendientes durante X días.
+
+Por ejemplo:
+
++2 días
+
++3 días
+
++5 días
+
++7 días
+
+Los tiempos exactos los definiremos posteriormente.
+
+Cuanto más tiempo lleve pendiente un asunto importante, mayor visibilidad deberá tener.
+
+8. CONTROL DE RESPUESTAS DE TERCEROS
+
+También necesitamos controlar lo contrario.
+
+Ejemplo:
+
+Alex recibe un correo → responde → ahora estamos esperando respuesta del cliente.
+
+El sistema debería cambiar automáticamente el estado a:
+
+ESPERANDO RESPUESTA
+
+Si pasan X días y el cliente/proveedor no contesta:
+
+SEGUIMIENTO NECESARIO
+
+La IA podría preparar incluso un correo de seguimiento para que Alex simplemente lo revise y decida si lo envía.
+
+9. DOCUMENTOS ADJUNTOS
+
+Queremos que la IA pueda identificar y analizar los adjuntos cuando sea necesario:
+
+Facturas.
+Presupuestos.
+Pedidos.
+Partes.
+Incidencias.
+PDF.
+Excel.
+Word.
+Imágenes.
+Dependiendo del documento, extraería determinada información.
+
+Por ejemplo, de una factura:
+
+Proveedor / nº factura / fecha / base / IVA / total / vencimiento
+
+No significa que todos los adjuntos tengan que procesarse igual. Primero habría que identificar qué tipo de documento es.
+
+10. REUNIONES Y GOOGLE CALENDAR
+
+También queremos integrar el calendario.
+
+Cuando llegue una invitación de reunión, la plataforma debería mostrar:
+
+Organizador.
+Participantes.
+Empresa.
+Asunto.
+Fecha.
+Hora.
+Duración.
+Ubicación.
+Enlace de videollamada.
+Y Alex debería poder hacer directamente:
+
+ACEPTAR | RECHAZAR | PENDIENTE
+
+Si acepta, la reunión deberá quedar correctamente sincronizada/confirmada en su Google Calendar.
+
+Desde la misma plataforma también debería poder consultar:
+
+REUNIONES DE HOY
+
+y
+
+PRÓXIMAS REUNIONES
+
+11. DASHBOARD PRINCIPAL
+
+La plataforma debería tener una portada muy sencilla.
+
+Por ejemplo:
+
+URGENTES | VENCIDOS | RESPONDER | ACCIONES | ESPERANDO RESPUESTA | REUNIONES
+
+Y debajo una zona:
+
+PRIORIDADES DE HOY
+
+Con:
+
+Prioridad.
+Empresa/persona.
+Asunto.
+Resumen IA.
+Qué necesita.
+Fecha límite.
+Días pendiente.
+Estado.
+No queremos llenar la pantalla de información.
+
+El objetivo es que Alex pueda entrar y en pocos segundos saber qué necesita su atención.
+
+12. ABRIR Y GESTIONAR UN ASUNTO
+
+Al pulsar sobre uno de los asuntos debería abrirse toda la información en la propia plataforma:
+
+CORREO
+
+Hilo completo de la conversación.
+
+RESUMEN IA
+
+Qué está pasando y qué solicita la otra persona.
+
+ESTADO
+
+Requiere respuesta / acción / esperando respuesta / etc.
+
+PRIORIDAD
+
+Alta / media / baja.
+
+FECHA LÍMITE
+
+Cuando exista.
+
+ADJUNTOS
+
+Con acceso a los documentos y a la información extraída.
+
+RESPUESTA PROPUESTA
+
+Texto preparado por IA.
+
+Y desde esa misma pantalla Alex podrá modificarlo y enviarlo.
+
+Este punto es importante porque queremos un único punto de entrada.
+
+No queremos:
+
+Plataforma → Gmail → Plataforma → Calendar → Gmail
+
+Queremos:
+
+ALEX → PLATAFORMA
+
+13. ORDENADOR + MÓVIL
+
+Alex tiene que poder utilizar la plataforma tanto desde:
+
+ORDENADOR
+
+como desde:
+
+MÓVIL / TABLET
+
+Por tanto, deberá ser responsive.
+
+También podríamos valorar hacerla tipo PWA, para que pueda añadirla a la pantalla de inicio del móvil y utilizarla prácticamente como una aplicación.
+
+Desde móvil también debería poder realizar acciones, no solamente consultar:
+
+Leer.
+Responder.
+Revisar borradores IA.
+Enviar.
+Ver adjuntos.
+Gestionar pendientes.
+Aceptar reuniones.
+14. NOTIFICACIONES
+
+También queremos disponer de notificaciones.
+
+Pero NO queremos notificar cada nuevo email porque volveríamos a generar ruido.
+
+Las notificaciones deberían reservarse para situaciones relevantes:
+
+PRIORIDAD ALTA
+
+Llega un asunto realmente importante.
+
+VENCE HOY
+
+Hay una gestión con fecha límite.
+
+VENCIDO
+
+Hay algo que debería haberse realizado.
+
+SIN RESPUESTA
+
+Un asunto importante lleva X días pendiente.
+
+SEGUIMIENTO
+
+Estamos esperando una respuesta externa desde hace demasiado tiempo.
+
+NUEVA REUNIÓN
+
+Hay una invitación pendiente.
+
+PRÓXIMA REUNIÓN
+
+Recordatorio antes de una reunión.
+
+Al pulsar la notificación debería abrirse directamente el asunto correspondiente dentro de la plataforma.
+
+15. RESUMEN DEL DÍA
+
+Cada día la portada debería generar automáticamente un pequeño resumen:
+
+RESUMEN DE HOY
+
+Urgentes.
+Vencidos.
+Requieren respuesta.
+Requieren acción.
+Pendientes antiguos.
+Esperando respuesta.
+Seguimientos.
+Reuniones.
+Invitaciones pendientes.
+Y especialmente:
+
+QUÉ DEBERÍA ATENDER ALEX HOY
+
+16. SEGURIDAD
+
+Como estamos hablando de su correo corporativo, calendario y documentación, necesitamos que la conexión con Google se realice de forma segura mediante las APIs/autorizaciones correspondientes.
+
+No queremos que el funcionamiento dependa de guardar la contraseña de Alex en la aplicación.
+
+17. DE MOMENTO NO QUEREMOS UN CRM
+
+En esta primera fase no queremos convertir esto en un CRM ni complicar innecesariamente el proyecto.
+
+Primero queremos resolver bien:
+
+CORREO + IA + PRIORIDADES + RESPUESTAS + PENDIENTES + SEGUIMIENTO + DOCUMENTOS + CALENDARIO + NOTIFICACIONES
+
+Más adelante podemos valorar que determinados correos generen automáticamente:
+
+Tareas.
+Incidencias.
+Registros de cliente.
+Acciones comerciales.
+Oportunidades.
+Procesos internos.
+
+18. PREPARADO PARA CRECER
+
+Aunque inicialmente estamos pensando en Alex, sería interesante que la arquitectura no quede limitada técnicamente a un único usuario.
+
+Si funciona bien, posteriormente podríamos utilizar el mismo sistema con otras personas de SSERVITIUM.
+
+Cada usuario tendría su propio:
+
+Correo + calendario + prioridades + pendientes + notificaciones + permisos.
+
+RESUMEN DEL CONCEPTO
+
+Actualmente:
+
+Alex → abre Gmail → revisa → lee → interpreta → clasifica → prioriza → recuerda → responde → revisa calendario → controla pendientes.
+
+Queremos pasar a:
+
+Gmail + Google Calendar → IA → analiza → clasifica → resume → prioriza → controla → prepara
+
+y finalmente:
+
+Alex → entra en una única plataforma → ve lo importante → decide → actúa.
+
+...
